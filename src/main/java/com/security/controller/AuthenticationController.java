@@ -18,7 +18,7 @@ import com.security.service.AuthService;
 @RequiredArgsConstructor
 public class AuthenticationController {
 
-    private final AuthServiceImpl authService;
+    private final AuthService authService;
     @PostMapping("/signup")
     public ResponseEntity<JwtAuthenticationResponse> signUp(@RequestBody SighnUpRequest request){
         return ResponseEntity.ok(authService.signup(request));

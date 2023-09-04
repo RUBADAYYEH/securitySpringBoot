@@ -19,7 +19,7 @@ import com.security.service.JwtService;
 public class AuthServiceImpl implements AuthService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
-    private final JwtServiceImpl jwtService;
+    private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
     @Override
     public JwtAuthenticationResponse signup(SighnUpRequest request) {

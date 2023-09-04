@@ -37,7 +37,7 @@ import lombok.RequiredArgsConstructor;
 public class SecurityConfig {
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
 
-    private final UserServiceImpl userService;
+    private final UserService userService;
 
 
 
